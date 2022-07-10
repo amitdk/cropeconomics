@@ -1,2 +1,0 @@
-## Welcome To Crop Economics
-
