@@ -36,7 +36,7 @@
                 </button>
                 <div class="m-lg-0 my-lg-0 navbar-nav navbar-nav-scroll" style="max-height: 100px; width: 450px; justify-content: space-evenly;">
                     <a href="/" data-rr-ui-event-key="/" class="nav-link active" style="font-weight: 500;">Home</a>
-                    <a href="http://ec2-54-161-0-108.compute-1.amazonaws.com/tool" data-rr-ui-event-key="/hiw" class="nav-link" style="font-weight: 400;">Tool</a>
+                    <a id="toolsite" href="http://ec2-54-161-0-108.compute-1.amazonaws.com/tool" data-rr-ui-event-key="/hiw" class="nav-link" style="font-weight: 400;">Tool</a>
                     <a href="aboutus.html" data-rr-ui-event-key="/us" class="nav-link" style="font-weight: 400;">About Us</a>
                 </div>
             </div>
@@ -167,6 +167,11 @@
         <footer class="py-5 bg-dark">
             <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Crop Economics</p></div>
         </footer>
+        <!-- Site check -->
+        <script type="text/javascript" src=" http://ec2-54-161-0-108.compute-1.amazonaws.com/tool/api/crop_types" 
+            onerror="document.getElementById('toolsite').remove();">           
+        </script>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
