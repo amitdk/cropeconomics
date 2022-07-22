@@ -7,7 +7,7 @@
         <meta name="description" content="Crop planning and advisory platform" />
         <meta name="author" content="Amit Karandikar, Audrey Lei" />
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-        <title>Crop Economics</title>
+        <title>CropEconomics</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -29,7 +29,7 @@
                         <img src="assets/cr-logo.png" class="" style="position: relative; margin-right: 10px; bottom: 3px; width: 40px;">
                     </span>
                     <span style="position: relative; left: 7px; font-size: x-large; font-weight: 400;">
-                        Crop Economics
+                        CropEconomics
                     </span>
                 </a>
                 <button aria-controls="navbarScroll" type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed">
@@ -59,72 +59,97 @@
                 </div>
             </div>
         </header>
-        <!-- Features section-->
-        <section class="py-5 border-bottom" id="features">
-            <div class="container px-5 my-5">
-                <div class="row gx-5">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Yield Predictions</h2>
-                        <p style="text-align: justify;">
-                            Yield predictions are provided using machine learning techniques using satellite data obtained through spectral remote sensing of the farm area where you may be looking to grow a certain crop. The techniques adopted for predicting yields also take into account trends around crops grown within the region.
-                        </p>
-                    </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-currency-dollar"></i></div>
-                        <h2 class="h4 fw-bolder">Price Predictions</h2>
-                        <p style="text-align: justify;">Price predictions are based on various market conditions and indices that help to ascertain the asking price that one may expect to get for the crop that you may be looking to grow.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-bar-chart-line"></i></div>
-                        <h2 class="h4 fw-bolder">Statistics</h2>
-                        <p style="text-align: justify;">Statistical information about crop yields and pricing in prior years are available in the tool to help you to see trends and gain some insight into some of the data that helped drive our price and yield predictions.</p>
-                    </div>
-                </div>
+        <!-- Testimonials section-->
+        <section class="py-5 border-bottom bg-light">
+            <div class="container px-5 my-5 px-5 col-lg-8">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Our Mission Statement</h2>
+                    <p class="lead mb-2">Our mission is to provide strategic insights and knowledge to mid-sized farmers in the U.S. to help them improve their crop selection methods</p>
+                </div>                
             </div>
-        </section>
-        <section class="projects-section bg-light" id="projects">
+        </section>        
+        <section class="projects-section bg" id="projects">
             <div class="container px-4">
                 <!-- Featured Project Row-->
                 <div class="row gx-5 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-7 col-lg-7">
                         <div class="embed-responsive embed-responsive-4by3">
-                            <iframe class="embed-responsive-item" src="assets/mov/cropeco.mp4" style="width: 710px; height: 400px;" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="assets/mov/cropeco.mp4" style="width: 100%; height: 400px;" allowfullscreen></iframe>
                         </div>
                     </div>
 
-                    <div class="col-xl-5 col-lg-5">
+                    <div class="col-xl-5 col-lg-5 my-4">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>How it works</h4>
-                            <p class="text-black-50 mb-0" style="text-align: justify;">Crop Economics empowers farmers to utilize data when deciding which crops are best suited in their region to maximize profits. Crop Economics utilizes Google’s remote sensing data, paired with historical USDA estimated crop yields, to predict yields for a selection of row crops based on the farmers specified location. Simultaneously, the tool uses USDA crop cost, pricing data and risk data to estimate the price for a given crop in their specified location. By combining both of these pieces, Crop Economics can estimate a revenue for a handful of row crops for a farmer given their location. This tool empowers farmers to understand historical trends in a given crop's yield and pricing to make the best decision for their farm. </p>
+                            <p class="display-5" style="text-shadow:0 3px 5px lightgrey">How it works</p>
+                            <p class="text-black-50 mb-0 lead" style="text-align: justify;">We have built a tool that empowers farmers to utilize data when deciding which crops are best suited in their region to maximize profits. Using remote sensed satellite data, paired with historical USDA estimated crop yields, our tool is able to predict yields for a selection of row crops based on your farm location. Simultaneously, the tool also uses USDA crop cost, pricing data and risk data to estimate the price for a given crop in their specified location. By combining both of these pieces, we are able to estimate expected revenue for a handful of row crops for a given farm location.</p><br/>
+                            <p class="lead text-black-50 mb-0" style="text-align: justify;">
+                                The video on the left gives you an idea of how to try out our tool for the location you are looking to grow crops in. <strong>Give it a try...</strong>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>                
+        <!-- Features section-->
+        <section class="py-3 border-bottom" id="features">
+            <div class="container px-5">
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div style="display: flex;align-items: center;">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                                <i class="bi bi-collection"></i>
+                            </div>
+                            <h2 class="mx-3 h4 fw-bolder">Yield Predictions</h2>
+                        </div>
+                        <p style="text-align: justify;">
+                            Yield predictions are provided using machine learning techniques that leverage satellite data obtained through spectral remote sensing of the farm area where you may be looking to grow a certain crop. The techniques adopted for predicting yields also take into account trends around crops grown within the region.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div style="display: flex;align-items: center;">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                                <i class="bi bi-currency-dollar"></i>
+                            </div>
+                            <h2 class="mx-3 h4 fw-bolder">Price Predictions</h2>
+                        </div>                        
+                        <p style="text-align: justify;">Price predictions are based on various market conditions and indices that help to ascertain the asking price that one may expect to get for the crop that you may be looking to grow.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div style="display: flex;align-items: center;">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                                <i class="bi bi-bar-chart-line"></i>
+                            </div>
+                            <h2 class="mx-3 h4 fw-bolder">Statistics</h2>
+                        </div>                        
+                        <p style="text-align: justify;">Statistical information about crop yields and pricing in prior years are available in the tool to help you to see trends and gain some insight into some of the data that helped drive our price and yield predictions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Testimonials section-->
-        <section class="py-5 border-bottom">
-            <div class="container px-5 my-5 px-5">
+        <section class="py-5 bg-light border-bottom">
+            <div class="container px-0 my-0 px-5">
                 <div class="text-center mb-5">
                     <h2 class="fw-bolder">Customer testimonials</h2>
                     <p class="lead mb-0">Our customers love working with us</p>
                 </div>
                 <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-11" style="display: flex;">
                         <!-- Testimonial 1-->
-                        <div class="card mb-4">
+                        <div class="card mx-3 mb-4">
                             <div class="card-body p-4">
                                 <div class="d-flex">
                                     <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
                                     <div class="ms-4">
-                                        <p class="mb-1">Thank you for putting together such a great product. We loved working with you and the whole team, and we will be recommending you to others!</p>
+                                        <p class="mb-1">The whole team was a huge help with putting things together for our company and brand. We will be hiring them again in the near future for additional work!</p>
                                         <div class="small text-muted">- Client Name, Location</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Testimonial 2-->
-                        <div class="card">
+                        <div class="card mb-4 mx-5">
                             <div class="card-body p-4">
                                 <div class="d-flex">
                                     <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
