@@ -19,6 +19,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/waves.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -29,7 +30,7 @@
                         <img src="assets/cr-logo.png" class="" style="position: relative; margin-right: 10px; bottom: 3px; width: 40px;">
                     </span>
                     <span style="position: relative; left: 7px; font-size: x-large; font-weight: 400;">
-                        Crop Economics
+                        CropEconomics
                     </span>
                 </a>
                 <button aria-controls="navbarScroll" type="button" aria-label="Toggle navigation" class="navbar-toggler collapsed">
@@ -42,108 +43,92 @@
                 </div>
             </div>
         </nav>
-        <!-- Features section-->
-        <section class="py-5 border-bottom" id="features">
-            <div class="container px-5 my-5">
-                <div class="row gx-5">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Yield Predictions</h2>
-                        <p>Yield predictions are provided based on remote sensed...</p>
-                    </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-currency-dollar"></i></div>
-                        <h2 class="h4 fw-bolder">Price Predictions</h2>
-                        <p>Price predictions are based on ...</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-bar-chart-line"></i></div>
-                        <h2 class="h4 fw-bolder">Statistics</h2>
-                        <p>Our tool provides statistics at each level ...</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="projects-section bg-light" id="projects">
+        <section class="projects-section bg" id="projects" style="background: linear-gradient(0deg, #eee9e0 0%,#fff 100%);">
             <div class="container px-4">
                 <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="row gx-0 col-lg-12 align-items">
                     <div class="col-xl-8 col-lg-7">
-                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." style="padding: 40px 0 40px 0;" />
+                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/data-model-pipeline.png" alt="..." style="padding: 40px 0 40px 0;" />
                     </div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>How it works</h4>
-                            <p class="text-black-50 mb-0">Our tool works to determine...</p>
+                    <div class="col-xl-4 my-5 col-lg-5">
+                        <div class="featured-text text-center">
+                            <h4>Data Pipeline & Modeling</h4>
                         </div>
-                    </div>
-                </div>
-                <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
-                                </div>
-                            </div>
+                        <div class="featured-text mx-2 my-4 text-lg-left">
+                            <p class="my-3 text-black mb-0" style="text-align: justify;">
+                                Our data pipeline is built upon 2 large datasets -  
+                                <ui>
+                                    <li>Remote sensed satellite data made available through Google Earth Engine</li>
+                                    <li>Crop information available through USDA web services.</li>
+                                </ui>
+                            </p>
+                            <p class="my-3 text-black mb-0" style="text-align: justify;">
+                                For the crop yield model, the remote sensed data from Google Earth along with crop yield information from USDA are preprocessed and converted to build a yield prediction model based on ensembled based machine learning modeling techniques.
+                            </p>
+
+                            <p class="my-3 text-black mb-0" style="text-align: justify;">
+                                For the price yield model, multiple USDA datasets are preprocessed and converted to build a price prediction model leveraging different regression techniques.
+                            </p>
+
+                            <p class="my-3 text-black mb-0" style="text-align: justify;">
+                                The current performance of the yield model is in line with other state of the art machine learning schemes.
+
+                                While there aren't any other efforts to compare the price model, it's accuracy is high overall and we feel very confident about its predictions.
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <!-- Project Two Row-->
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Mountains</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div>                    
                 </div>
             </div>
-        </section>        
-        <!-- Testimonials section-->
-        <section class="py-5 border-bottom">
-            <div class="container px-5 my-5 px-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Customer testimonials</h2>
-                    <p class="lead mb-0">Our customers love working with us</p>
+        </section>                    
+        <section class="projects-section bg-light" id="projects" style="background: linear-gradient(0deg, #eee9e0 0%,#fff 20%);">
+            <div class="header">
+                <!--Waves Container-->
+                <div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                        <defs>
+                            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                        </defs>
+                        <g class="parallax">
+                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
-                        <!-- Testimonial 1-->
-                        <div class="card mb-4">
-                            <div class="card-body p-4">
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                                    <div class="ms-4">
-                                        <p class="mb-1">Thank you for putting together such a great product. We loved working with you and the whole team, and we will be recommending you to others!</p>
-                                        <div class="small text-muted">- Client Name, Location</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Testimonial 2-->
-                        <div class="card">
-                            <div class="card-body p-4">
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                                    <div class="ms-4">
-                                        <p class="mb-1">The whole team was a huge help with putting things together for our company and brand. We will be hiring them again in the near future for additional work!</p>
-                                        <div class="small text-muted">- Client Name, Location</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <!--Waves end-->            
+            </div>            
+            <div class="container px-4">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 col-lg-12 align-items">
+                    <div class="col-xl-8 col-lg-7">
+                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/app-architecture.png" alt="..." style="padding: 40px 0 40px 0;" />
                     </div>
+                    <div class="col-xl-4 my-5 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Application Architecture</h4>
+                        </div>
+                        <div class="featured-text my-4">
+                            <p class="text-black-50 mb-0" style="text-align: justify;">We currently leverage Amazon AWS to host our application infrastructure. The tool is hosted as a secure website load-balanced between to AWS zones and protected further by an application firewall.</p> 
+
+
+                            <p class="my-3 text-black-50 mb-0" style="text-align: justify;">
+                            Our data pipeline is built upon satellite data available in Google Earth Engine, as well as data available through USDA web services. Our data is sourced from these locations on a daily basis to make this information available locally for training and updating our machine learning models as well as allow our online website to benefit from a significantly improved overall performance.
+                            </p>
+
+
+                            <p class="my-3 text-black-50 mb-0" style="text-align: justify;">
+                            our web-based tool is built from the ground up using a modern web technology stack. The frontend is developed using ReactJS, NPM and NodeJS, to create an optimized site that is a single-page application with dynamic content loading.
+                            </p>
+
+                            <p class="my-3 text-black-50 mb-0" style="text-align: justify;">
+                            To allow the user / the farmer to look up their farm’s location, we use GeoCoding apis through Mapbox. That makes the lookup and pin down of a specific location similar in user experience to any other Map app out there.
+                            </p>
+
+                            <p class="my-3 text-black-50 mb-0" style="text-align: justify;">
+                            This frontend talks with a Python based Flask web service connected to MySQL and load-balanced through Nginx. Finally the data architecture and web application run in a Kubernetes cluster in AWS leveraging multiple Docker containers.</p>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </section>
