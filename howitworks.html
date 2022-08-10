@@ -49,9 +49,6 @@
             <div class="container px-4">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 col-lg-12 align-items">
-                    <div class="col-xl-8 col-lg-7">
-                        <img class="img-fluid mb-3 mb-lg-0" src="assets/img/data-model-pipeline.png" style="padding: 40px 0 40px 0;" />
-                    </div>
                     <div class="col-xl-4 my-5 col-lg-5">
                         <div class="featured-text text-center">
                             <h4>Data Pipeline & Modeling</h4>
@@ -78,7 +75,23 @@
                                 While there aren't any other efforts to compare the price model, it's accuracy is high overall and we feel very confident about its predictions.
                             </p>
                         </div>
-                    </div>                    
+                    </div>                     
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="col-md-12">
+                            <img class="img-fluid mb-3 mb-lg-0" src="assets/img/data-model-pipeline.png" style="padding: 40px 0 40px 0;" />
+                        </div>
+                        <div style="padding: 10px 0 0 40px;">
+                             <h4>Models - Techniques & Accuracy</h4>
+                        </div>
+                        <div style="display: flex">
+                            <div class="col-md-6" style="padding: 10px 0 0 40px; text-align: justify;">
+                                <b>The crop yield model</b> produced the best results with XGBoost leveraging auto-correlation (given the strong correlation with prior years), as well as a rolling window (for additional observations), to get an R<sup>2</sup> of 0.71 and RMSE of 8.9.  
+                            </div>
+                            <div class="col-md-6" style="padding: 10px 0 0 40px; text-align: justify;">
+                                <b>The price model</b> produced the best results using a Huber regression leveraging multiple economic indexes and prior year correlations to get an R<sup>2</sup> of 0.89 and RMSE of 0.015.  
+                            </div>
+                        </div>
+                    </div>                   
                 </div>
             </div>
         </section>                    
